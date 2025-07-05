@@ -1,3 +1,4 @@
+import os
 from nicegui import ui
 from chatbot import get_bot_response
 
@@ -16,4 +17,4 @@ ui.label('🤖 AI Chatbot με NiceGUI και Hugging Face (υποστηρίζε
 input_box = ui.input(placeholder='Γράψε το μήνυμά σου εδώ...').on('keydown.enter', send)
 ui.button('Αποστολή', on_click=send)
 
-ui.run()
+ui.run(host='0.0.0.0', port=int(os.getenv('PORT', 8080)))
