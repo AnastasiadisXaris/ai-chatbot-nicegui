@@ -1,3 +1,4 @@
 nicegui
 transformers
 torch
+some-other-lib-if-any
