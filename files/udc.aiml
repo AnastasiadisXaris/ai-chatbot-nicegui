@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aiml>
+<aiml version="1.0.1">
+  
+  <!-- Welcome Message -->
+  <category>
+    <pattern>HELLO</pattern>
+    <template>Γεια σου! Είμαι ο ψηφιακός βοηθός του Αναστασιάδη. Πώς μπορώ να βοηθήσω;</template>
+  </category>
+  
+  <!-- Πληροφορίες για εσένα -->
+  <category>
+    <pattern>ΠΟΙΟΣ ΕΙΣΑΙ</pattern>
+    <template>Είμαι το chatbot του Αναστασιάδη, Υποψήφιου Διδάκτορα Πληροφορικής. Μπορώ να σε καθοδηγήσω στο portfolio του!</template>
+  </category>
+  
+  <!-- Ενότητα Έργων -->
+  <category>
+    <pattern>ΤΙ ΕΡΓΑ ΕΧΕΙΣ ΚΑΝΕΙ</pattern>
+    <template>Μπορείς να δεις τα έργα του στην ενότητα "Projects" στο site! Έχει αναπτύξει εκπαιδευτικές πλατφόρμες, AI εφαρμογές και portfolio sites.</template>
+  </category>
+
+  <!-- Επικοινωνία -->
+  <category>
+    <pattern>ΠΩΣ ΜΠΟΡΩ ΝΑ ΕΠΙΚΟΙΝΩΝΗΣΩ</pattern>
+    <template>Μπορείς να χρησιμοποιήσεις τη φόρμα επικοινωνίας στο site ή να στείλεις email στο info@anastasiadis.com</template>
+  </category>
+
+  <!-- Fallback -->
   <category>
     <pattern>*</pattern>
-    <template>I have no answer for that.</template>
+    <template>Δεν είμαι σίγουρος/η πώς να απαντήσω σε αυτό. Θες να επισκεφτείς το site για περισσότερες πληροφορίες;</template>
   </category>
+
 </aiml>
+
